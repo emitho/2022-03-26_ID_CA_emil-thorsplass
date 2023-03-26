@@ -13,6 +13,7 @@ body {
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
+    z-index: 1;
 }
 hr {
     border: solid 3px black;
@@ -25,14 +26,14 @@ a {
 .site-banner {
     height: 100px;
     background-color: black;
-    position: fixed;
+    position: sticky;
     top: 0;
     width: 100%;
 }
 .--mobile {
     position: sticky;
     top: 0;
-    z-index: 9;
+    z-index: 10;
 }
 .site-banner__logo {
     width: 70px;
@@ -75,7 +76,7 @@ a {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
-    z-index: 3;
+    z-index: 10;
     position: relative;
     
 } 
@@ -143,7 +144,7 @@ a {
 /* header image */ 
 .header-image {
     width: 100%;
-    z-index: 1;
+    /* z-index: 1;  */
     position: fixed;
 }
 /* explore section */ 
@@ -235,7 +236,7 @@ footer {
     padding-top: 40px;
     background-color: #ff5e6c;
     position: relative;
-    z-index: 10;
+    z-index: 11;
     text-align: center;
 }
 /* footer newsletter */
