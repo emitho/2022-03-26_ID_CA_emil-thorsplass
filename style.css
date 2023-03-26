@@ -1,4 +1,7 @@
 /* GLOBAL STYLES */
+html {
+    min-height: 100%;
+}
 body {
     margin: 0;
     padding: 0;
@@ -6,6 +9,10 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:#000;
     line-height: 1.5;
+    background-image: url("images/header_photo3--compressed.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 hr {
     border: solid 3px black;
@@ -311,7 +318,11 @@ input {
     }
     /* header image */
     .header-image {
-        content: url(images/header_photo2--compressed.jpg);
+        /* content: url(images/header_photo2--compressed.jpg); CHANGED TO BEING A BACKGROUND IMAGE INSTEAD TO AVOID ODD SCROLLS */
+    }
+    body {
+        /* background-image: url("images/header_photo2--compressed.jpg"); */
+
     }
     /* explore section */
     .exhibition__buttons {
@@ -377,7 +388,11 @@ input {
     }
     /* header image */ 
     .header-image {
-        content: url(images/header_photo1--compressed.jpg);
+        /* content: url(images/header_photo1--compressed.jpg); CHANGED TO BACKGROUND IMAGE TO AVOID ODD SCROLLS */
+    }
+    body {
+        background-image: url("images/header_photo1--compressed.jpg");
+
     }
     /* explore section */
     .explore {
@@ -436,7 +451,7 @@ input {
 
     /* site-banner */
     .header-image {
-        content: url(images/header_photo3--compressed.jpg);
+        /* content: url(images/header_photo3--compressed.jpg);  */
     }
     .explore {
         width: 95%;
