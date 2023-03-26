@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head lang=en>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Emil Thorsplass">
+        <meta description="The official website of the Community Science Museum. The main goal of the museum is to engage young people all over the country, and to showcase the latest in scientific research, as well as the old exhibits that has stood the test of time.">
+        <script src="https://kit.fontawesome.com/49cab3d0ef.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Community Science Museum</title>
+    </head>
+    <body>
+        <main role="main">
+            <header role="banner" class="site-banner --mobile">
+                <a href="index.html"><img class="site-banner__logo" src="images/graphics/logo--white.png" alt="The logo of Community Science Museum" title="A logo to the Community Science Museum showing a digital drawing of a sun with circles around in, resembling a galaxy.">
+                <p class="site-banner__headertext">Community Science Museum</p></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu" role="navigation">
+                    <li class="--selected"><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">Explore the museum</a></li>
+                    <li><a href="exhibition.html">Exhibition spaces</a></li>
+                    <li><a href="visit.html">Visit us</a></li>
+                    <li><a href="get-involved.html">Get involved</a></li>
+                    <li class="menu__last-item"><a href="about.html">About us</a></li>
+                </ul>
+            </header>
+            <div class="header-image"></div>
+            <div class="explore__wrapper">
+                <section class="explore">
+                    <h1 class="explore-headertext">Explore Together</h1>
+                    <hr>
+                    <div class="explore-flexbox --home-page">
+                        <div class="exhibition__buttons --cosmology">
+                            <a class="exhibition__button" href="exhibition.html#cosmology"><div>Cosmology.</div><p class="arrow">&#8594;</p></a>
+                            <a class="exhibition__button --evolution" href="exhibition.html#evolution"><div>Evolution.</div><p class="arrow">&#8594;</p></a>
+                            <a class="exhibition__button --biology" href="exhibition.html#biology"><div>Biology &amp; Medicine.</div><p class="arrow">&#8594;</p></a>
+                            <a class="exhibition__button --robotics" href="exhibition.html#robotics"><div>Robotics &amp; AI.</div><p class="arrow">&#8594;</p></a>
+                        </div>
+                    </div>
+                    <div class="explore-flexbox --home-page">
+                        <div class="explore-flex --kids">
+                            <h2 class="explore-flex__headertext">For kids</h2>
+                            <img class="explore-flex__photo --kids" src="images/explore_photo--kids.jpg" alt="Photograph of two children, a girl and a boy, helping each other out with a questionnaire.">
+                            <p class="explore-flex__copy">Are you a young person looking to learn more about science? Come on down to our museum, there&#8217;s plenty to see and do.</p>
+                            <p class="explore-flex__link"><a href="explore.html#kids">Read more.</p>
+                        </div>
+                    </div>
+                    <div class="explore-flexbox --home-page">
+                        <div class="explore-flex --teachers">
+                            <h2 class="explore-flex__headertext">For teachers</h2>
+                            <img class="explore-flex__photo --teachers" src="images/explore_photo--teachers.jpg" alt="Photograph of a teacher holding a lecture with a keynote presentation.">
+                            <p class="explore-flex__copy">As a community-driven museum, we want to work with schools to create places of learning and exploring.</p>
+                            <p class="explore-flex__link"><a href="explore.html#teachers">Read more</a> or <a href="mailto:enquiries@csm.com">get in touch.</a></p>
+                        </div>
+                    </div>
+                    <div class="explore-flexbox --home-page">
+                        <div class="explore-flex --researchers">
+                            <h2 class="explore-flex__headertext">For researchers</h2>
+                            <img class="explore-flex__photo --researchers" src="images/explore_photo--researchers.jpg" alt="Photograph of a scientist with protective glasses sitting by a large machine doing research.">
+                            <p class="explore-flex__copy">Are you looking to get involved with our team of researchers and academics?</p>
+                            <p class="explore-flex__link"><a href="explore.html#researchers">Read more</a> or <a href="mailto:enquiries@csm.com">get in touch.</a></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer role="content-info">
+            <div class="container">
+                <h3 class="newsletter__headertext">Sign up to our newsletter</h3>
+                <form action="index.html" method="post">
+                    <div class="email-box">
+                        <i class="fas fa-envelope"></i>
+                        <input class="tbox" type="email" name="" value="" placeholder="Enter your email address">
+                        <button class="btn" type="submit" name="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-nav__item"><a href="index.html">Home</a></p>
+                <p class="footer-nav__item"><a href="visit.html">Visit us</a></p>
+                <p class="footer-nav__item"><a href="about.html">About CSM</a></p>
+                <p class="footer-nav__item"><a href="get-involved.html">Get involved</p>
+                <p class="footer-nav__item"><a href="exhibition.html">Exhibitions</a></p>
+                <p class="footer-nav__item"><a href="explore.html">Explore</a></p>
+            </div>
+            <div class="footer-info">
+                <p class="footer-info__item --miniheader"> Free entry</p>
+                <p class="footer-info__item"> Great Scientist Street</p>
+                <p class="footer-info__item"> 421 New Hampshire 40003</p>
+                <p class="footer-info__item --miniheader"> Opening hours</p>
+                <p class="footer-info__item"> Mondays: closed</p>
+                <p class="footer-info__item"> Tuesday - Thursday: 10:00-16:00</p>
+                <p class="footer-info__item"> Fridays: 10:00-19:00</p>
+                <p class="footer-info__item"> Saturdays: 09:00-16:00</p>
+                <p class="footer-info__item"> Sundays: 09:00-13:00</p>
+            </div>
+        </footer>
+    </body>
+</html>

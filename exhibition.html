@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head lang=en>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Emil Thorsplass">
+        <meta description="Explore the many exhibition spaces of the Community Science Museum. Whether you're interested in the exciting new field of Robotics & AI, Evolution, Biology or Cosmology, – we got the latest and greatest exhibits.">
+        <script src="https://kit.fontawesome.com/49cab3d0ef.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">    
+        <title>Exhibition spaces | Community Science Museum</title>
+    </head>
+    <body>
+        <main role="main">
+            <header role="banner" class="site-banner --mobile">
+                <a href="index.html"><img class="site-banner__logo" src="images/graphics/logo--white.png" alt="The logo of Community Science Museum" title="A logo to the Community Science Museum showing a digital drawing of a sun with circles around in, resembling a galaxy.">
+                <p class="site-banner__headertext">Community Science Museum</p></a>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                <ul class="menu" role="navigation">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="explore.html">Explore the museum</a></li>
+                    <li class="--selected"><a href="exhibition.html">Exhibition spaces</a></li>
+                    <li><a href="visit.html">Visit us</a></li>
+                    <li><a href="get-involved.html">Get involved</a></li>
+                    <li class="menu__last-item"><a href="about.html">About us</a></li>
+                </ul>
+            </header>
+            <div class="header-image"></div>
+            <div class="explore__wrapper">
+                <section class="explore">
+                    <h1 class="explore-headertext">Exhibition Spaces</h1>
+                    <hr>
+                    <div class="explore-flexbox --exhibition-page">
+                        <div class="explore-flex --cosmology" id="cosmology">
+                            <h2 class="explore-flex__headertext">Cosmology</h2>
+                            <img class="explore-flex__photo --cosmology" src="images/explore_photo--cosmology.jpg" alt="An image showing multiple photographs of the moon side by side in different eclipse stages.">
+                            <div class="explore-flex__copy">
+                                <p>Explore the wonders of our cosmos. Our fantastic exhibition, &#8216;The Sky Above Us&#8217;, explores the night sky and what we can see and know about the universe around us. We&#8217;ll locate the various constellations and galaxies that can be seen and learn a bit about the early navigators who used the stars to travel by.</p>
+                                <p>Follow the journey of our solar exploration: from early Arab traders, to Galileo&#8217;s telescope, to the latest exploration of the planets in our solar system.</p>
+                            </div>
+                        </div>
+                        <div class="explore-flex --evolution" id="evolution">
+                            <h2 class="explore-flex__headertext">Evolution</h2>
+                            <img class="explore-flex__photo --evolution" src="images/explore_photo--evolution.jpg" alt="Photograph of a young boy looking amazed and surprised after reading about the wonders of evolution">
+                            <div class="explore-flex__copy">
+                                <p>For centuries, philosophers and scientists have wrestled with the question of our origins. Where do we come from and how did we get here? Since Darwin proposed his theory of evolution we have had a framework for exploring and understanding our place in this world.</p>
+                                <p>Discover the origins of life on this planet and how the species we know today have evolved our time. You can also take some time to meet a few of the creatures who didn&#8217;t survive, including our Woolly Mammoth, the Dodos, and a number of dinosaurs too.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="explore-flexbox --exhibition-page">
+                        <div class="explore-flex --biology" id="biology">
+                            <h2 class="explore-flex__headertext">Biology &amp; Medicine</h2>
+                            <img class="explore-flex__photo --biology" src="images/explore_photo--biology.jpg" alt="Photograph of a young man looking through a microscope, exploring the vast scientific world of biology and medicine.">
+                            <div class="explore-flex__copy">
+                                <p>From micro-organisms to the human body, major breakthroughs in biology are offering us unique insights into the great wonders of the tiny world.</p>
+                                <p>For many people their life expectancy is much longer and their quality of life much improved, thanks to the growth of our understanding of medicine. Over a series of exhibits we explore the history of medicine and take a look at some major breakthroughs including the discovery of penicillin and the first heart transplant.</p>
+                                <p>Many of our great medicinal discoveries have come not only from the lab, but also from observing animals in the wild. Often our fellow creatures have beat us to it.</p>
+                            </div>
+                        </div>
+                        <div class="explore-flex --robotics" id="robotics">
+                            <h2 class="explore-flex__headertext">Robotics &amp; AI</h2>
+                            <img class="explore-flex__photo --robotics" src="images/explore_photo--robotics.jpg" alt="Photograph of a small white artificially intelligent robot.">
+                            <div class="explore-flex__copy">
+                                <p>The information revolution is here and robotics and artificial intelligence are the science of the future. From useful home applications of AI to industrial uses of robotics, the future is here. You can even say hello and shake the hand of Rob the Robot.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer role="content-info">
+            <div class="container">
+                <h3 class="newsletter__headertext">Sign up to our newsletter</h3>
+                <form action="index.html" method="post">
+                    <div class="email-box">
+                        <i class="fas fa-envelope"></i>
+                        <input class="tbox" type="email" name="" value="" placeholder="Enter your email address">
+                        <button class="btn" type="submit" name="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-nav">
+                <p class="footer-nav__item"><a href="index.html">Home</a></p>
+                <p class="footer-nav__item"><a href="visit.html">Visit us</a></p>
+                <p class="footer-nav__item"><a href="about.html">About CSM</a></p>
+                <p class="footer-nav__item"><a href="get-involved.html">Get involved</p>
+                <p class="footer-nav__item"><a href="exhibition.html">Exhibitions</a></p>
+                <p class="footer-nav__item"><a href="explore.html">Explore</a></p>
+            </div>
+            <div class="footer-info">
+                <p class="footer-info__item --miniheader"> Free entry</p>
+                <p class="footer-info__item"> Great Scientist Street</p>
+                <p class="footer-info__item"> 421 New Hampshire 40003</p>
+                <p class="footer-info__item --miniheader"> Opening hours</p>
+                <p class="footer-info__item"> Mondays: closed</p>
+                <p class="footer-info__item"> Tuesday - Thursday: 10:00-16:00</p>
+                <p class="footer-info__item"> Fridays: 10:00-19:00</p>
+                <p class="footer-info__item"> Saturdays: 09:00-16:00</p>
+                <p class="footer-info__item"> Sundays: 09:00-13:00</p>
+            </div>
+        </footer>
+    </body>
+</html>

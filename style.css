@@ -1,0 +1,513 @@
+/* GLOBAL STYLES */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:#000;
+    line-height: 1.5;
+}
+hr {
+    border: solid 3px black;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+/* site banner */ 
+.site-banner {
+    height: 100px;
+    background-color: black;
+}
+.--mobile {
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+.site-banner__logo {
+    width: 70px;
+    margin: 15px 0px 0px 2%;
+    float: left;
+}
+.site-banner__headertext {
+    color: white;
+    display: inline-block;
+    font-family: 'Playfair Display';
+    margin-left: 2.5%;
+    margin-top: 6px;
+    padding: 30px 0px 30px 0px; /* increased clickable area for link */ 
+}
+/* Hamburger menu mobile */
+.--mobile ul {
+    margin: -8px -5px 0px 0px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    background-color: #000000;
+    z-index: 10;
+    text-align: center;
+}
+.--mobile li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: white;
+    border-bottom: solid white 0.5px;
+}
+.--mobile li a:hover,
+.--mobile .menu-btn:hover {
+    background-color: #f4f4f4;
+    color: black;
+    font-weight: bold;
+}  
+/* menu */  
+.--mobile .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+    z-index: 3;
+    position: relative;
+    
+} 
+/* menu icon */
+.--mobile .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 20px 5px 20px 5px;
+    margin: 28px 15px 0px 2%;
+    position: relative;
+    user-select: none;
+}
+.--mobile .menu-icon .navicon {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 34px;
+}
+.--mobile .menu-icon .navicon:before,
+.--mobile .menu-icon .navicon:after {
+    background: rgb(255, 255, 255);
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+.--mobile .menu-icon .navicon:before {
+    top: 8px;
+}   
+.--mobile .menu-icon .navicon:after {
+    top: -8px;
+}
+/* menu btn */
+.--mobile .menu-btn {
+    display: none;
+}
+.--mobile .menu-btn:checked ~ .menu {
+    max-height: 420px;
+}
+.--mobile .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+.--mobile .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+.--mobile .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}   
+.--mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.--mobile .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}  
+.menu__last-item {
+    padding-bottom: 0px;
+}
+.--selected {
+    font-weight: bolder;
+    font-size: 2em;
+}
+/* header image */ 
+.header-image {
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+/* explore section */ 
+.explore__wrapper {
+    position: relative;
+    z-index: 2;
+    background-color: black;
+    display: flex;
+    margin-top: 600px;
+}
+.explore {
+    position: relative;
+    color: white;
+    margin: 0 auto;
+}
+.explore-headertext {
+    letter-spacing: 0.55rem;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.explore-flex__headertext {
+    margin-top: 10px;
+    display: inline-block;
+    color: #000000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+.exhibition__button {
+    flex: 50%;
+    border: solid black 3px;   
+    padding-top: 5%;
+    font-size: 1.5em;
+    height: 15%;
+    background-color: #fff5d7;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.exhibition__button div {
+    clear: right;
+    margin-bottom: -10px;
+}
+.arrow {
+    display: inline-block;
+    text-align: center;   
+    margin-top: -20%;
+    font-size: 1em;
+    margin-left: -11px; 
+}
+.exhibition__button:hover, .exhibition__button:active {
+    background-color: black;
+    color: white;
+}
+.explore-flex {
+    flex: 1;
+    background-color: #fff5d7;
+    padding: 20px 40px 90px 40px;
+}
+.explore-flex__photo {
+    width: 100%;
+    border-radius: 3%;
+    margin-left: %;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.explore-flex__copy {
+    color: black;
+    font-family: 'Playfair Display';
+}
+.explore-flex__link {
+    float: right;
+    color: #feb300;
+    font-weight: bold;
+    margin-top: 40px;
+}
+.explore-flex__link a {
+    color: #ff5e6c;
+}
+.explore-flex__link a:hover {
+    color: black;
+}
+/* visit us page */
+.--margin-top { /* for headertexts except the first one */
+    margin-top: 40px;
+}
+/* footer */ 
+footer {
+    width: 100%;
+    padding-top: 40px;
+    background-color: #ff5e6c;
+    position: relative;
+    z-index: 10;
+    text-align: center;
+}
+/* footer newsletter */
+.newsletter__headertext {
+    margin-bottom: 25px;
+}
+.container {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+}
+.email-box {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.email-box i {
+    background: #000;
+    width: 40px;
+    line-height: 40px;
+}
+.tbox, .btn {
+    border: none;
+    outline: none;
+    padding: 0px;
+    margin: 0px;
+}
+.tbox {
+    width: 0px;
+    width: 200px;
+    padding: 0 10px;
+}
+button {
+    background: #000;
+    color: white;
+    padding: 0 10px !important;
+    cursor: pointer;
+}
+button:hover {
+    background: white;
+    color: black;
+}
+input {
+    border-radius: 0;
+}
+/* footer navigation */ 
+.footer-nav {
+    margin-top: 25px;
+    display: inline-block;
+}
+.footer-nav__item {
+    color: #ffca4e;
+    font-weight: bold;
+    height: 30px;
+}
+.footer-nav__item a:hover {
+    color: white;
+}
+/* footer info */
+.footer-info__item {
+    margin: 0px;
+}
+.--miniheader {
+    font-weight: bold;
+}
+/*  TINY PHONE STYLES */ 
+
+@media only screen and (max-width: 364px) {
+    .site-banner__headertext {
+        
+    }
+}
+
+/* MOBILE AND SMALLER TABLET STYLES */
+@media only screen and (min-width: 365px) and (max-width: 500px) {
+
+    /* site banner */
+    .site-banner {
+    margin-bottom: -140px;
+    }
+    .--desktop {
+        display: none;
+    }
+    /* header image */
+    .header-image {
+        content: url(images/header_photo2--compressed.jpg);
+    }
+    /* explore section */
+    .exhibition__buttons {
+    display: flex;
+    transition: 0.3s;
+}
+    .exhibition__buttons {
+    flex-wrap: wrap;
+    height: 500px;
+    margin-bottom: 30px;
+}
+    .explore__wrapper {
+        margin-top: 563px;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .explore {
+        width: 100%;
+    }
+    .explore-flexbox {
+        flex-direction: column;
+    }
+    .explore-flex {
+        margin: 10px 0px 10px 0px;    
+    }
+    .explore-flex__headertext {
+        font-size: 5vw;
+    }
+    /* explore the museum page */
+    .explore-page__menu {
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .explore-page__menu-button {
+        height: 23%;
+    }
+    /* footer */
+    footer {
+        height: 790px;
+    }
+    /* footer navigation */ 
+    .footer-nav {
+        text-align: center;
+    }
+    /* footer info */
+    .footer-info {
+        margin-top: 35px;
+    }
+    .footer-info__item {
+        margin: 0px;
+    }
+    .--miniheader {
+        margin: 25px 0px 0px 0px;
+    }
+}
+
+/* TABLETS */
+@media only screen and (min-width: 501px) and (max-width: 1000px) {
+
+    /* site banner */
+    .site-banner {
+        position: sticky;
+    }
+    /* header image */ 
+    .header-image {
+        content: url(images/header_photo1--compressed.jpg);
+    }
+    /* explore section */
+    .explore {
+        width: 100%;
+    }
+    .explore__wrapper {
+        margin-top: 500px;
+        width: 100%;
+        padding-top: 20px;
+    }
+    .explore-flexbox {
+        flex-direction: column;
+    }
+    .explore-flex {
+        margin: 10px 0px 10px 0px;    
+    }
+    .explore-flex__photo {
+        width: 100%;
+        border-radius: 3%;
+        margin-left: %;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+    /* exhibition page explore section */ 
+    .exhibition__buttons {
+        display: flex;
+        transition: 0.3s;
+    }
+    .exhibition__buttons {
+        flex-wrap: wrap;
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    /* footer */
+    footer {
+        height: 750px;
+    }
+    /* footer navigation */ 
+    .footer-nav {
+        text-align: center;
+    }
+    /* footer info */
+    .footer-info {
+        margin-top: 35px;
+    }
+    .footer-info__item {
+        margin: 0px;
+    }
+    .--miniheader {
+        margin: 25px 0px 0px 0px;
+    }
+}
+
+/* LAPTOP-DESKTOP STYLES (and larger tablets in landscape*/
+@media only screen and (min-width: 1001px) {
+
+    /* site-banner */
+    .header-image {
+        content: url(images/header_photo3--compressed.jpg);
+    }
+    .explore {
+        width: 95%;
+        max-width: 1200px;
+        margin-bottom: 50px;
+        padding-top: 10px;
+    }
+    .explore:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .explore-flexbox.--exhibition-page, .explore-flexbox.--home-page {
+        float: left;
+        width: 50%;
+    }
+    .explore.--about, .explore.--visit {
+        max-width: 900px;
+    }
+    .explore .--get-involved {
+        margin: 0 auto;
+        max-width: 800px;
+    }
+    .explore-flex__photo.--about_2 {
+        display: none;
+    }
+    .explore-flex {
+        border: 5px solid black;
+    }
+    .explore-flex.--cosmology {
+       padding-bottom: 108px;
+    }
+   .explore-flex.--robotics {
+       padding-bottom: 132px;
+   }
+   .explore-flexbox.--explore-page {
+       display: flex;
+       flex-direction: row;
+   }
+   .exhibition__buttons {
+        display: inline-block; 
+        border-top: 30px solid black;
+    }
+   .exhibition__button {
+       width: 48.7%;
+       float: left;
+       height: 153px;
+       padding-top: 23.4%;
+       padding-bottom: 2%;
+   }
+   /* footer */
+   footer {
+        height: 550px;
+    }
+    /* footer navigation */ 
+    .footer-nav {
+        text-align: right;
+        display: inline-block;
+        vertical-align: -5px;
+        margin-right: 170px;
+    }
+    /* footer info */
+    .footer-info {
+        display: inline-block;
+        margin-top: 50px;
+        text-align: left;
+    }
+    .footer-info__item {
+        margin: 0px;
+    }
+    .--miniheader {
+        margin: 25px 0px 0px 0px;
+    }
+}
