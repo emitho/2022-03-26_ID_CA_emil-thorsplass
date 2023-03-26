@@ -9,11 +9,11 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:#000;
     line-height: 1.5;
-    /* background-image: url("images/header_photo3--compressed.jpg");  */
+    background-image: url("images/header_photo3--compressed.jpg"); 
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    z-index: 1;
+    /* z-index: 1; makes no sense */
 }
 hr {
     border: solid 3px black;
@@ -29,11 +29,12 @@ a {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 10;
 }
 .--mobile {
     position: sticky;
     top: 0;
-    z-index: 10;
+    /* z-index: 10; nope */
 }
 .site-banner__logo {
     width: 70px;
@@ -55,7 +56,7 @@ a {
     list-style: none;
     overflow: hidden;
     background-color: #000000;
-    z-index: 10;
+    /* z-index: 10; nope */
     text-align: center;
 }
 .--mobile li a {
@@ -76,7 +77,7 @@ a {
     clear: both;
     max-height: 0;
     transition: max-height .2s ease-out;
-    z-index: 10;
+    /* z-index: 10; nope */
     position: relative;
     
 } 
@@ -144,13 +145,13 @@ a {
 /* header image */ 
 .header-image {
     width: 100%;
-    /* z-index: 1;  */
+    /* z-index: 1; not applicable anymore */
     position: fixed;
 }
 /* explore section */ 
 .explore__wrapper {
     position: relative;
-    z-index: 2;
+    /* z-index: 2; ruins everything */
     background-color: black;
     display: flex;
     margin-top: 600px;
@@ -236,8 +237,9 @@ footer {
     padding-top: 40px;
     background-color: #ff5e6c;
     position: relative;
-    z-index: 11;
+    z-index: 1;
     text-align: center;
+    bottom: 0;
 }
 /* footer newsletter */
 .newsletter__headertext {
@@ -514,13 +516,13 @@ input {
     .footer-nav {
         text-align: right;
         display: inline-block;
-        vertical-align: -5px;
+        vertical-align: -5px; 
         margin-right: 170px;
     }
     /* footer info */
     .footer-info {
         display: inline-block;
-        margin-top: 50px;
+        margin-top: 50px; 
         text-align: left;
     }
     .footer-info__item {
@@ -529,4 +531,10 @@ input {
     .--miniheader {
         margin: 25px 0px 0px 0px;
     }
+}
+
+/* fix issue with footer overlapping menu bar on all screen types */
+
+main {
+    margin-bottom: 0px;
 }
