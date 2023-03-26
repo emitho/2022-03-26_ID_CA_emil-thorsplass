@@ -9,7 +9,7 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color:#000;
     line-height: 1.5;
-    background-image: url("images/header_photo3--compressed.jpg");
+    /* background-image: url("images/header_photo3--compressed.jpg");  */
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -25,6 +25,9 @@ a {
 .site-banner {
     height: 100px;
     background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 .--mobile {
     position: sticky;
@@ -321,7 +324,7 @@ input {
         /* content: url(images/header_photo2--compressed.jpg); CHANGED TO BEING A BACKGROUND IMAGE INSTEAD TO AVOID ODD SCROLLS */
     }
     body {
-        /* background-image: url("images/header_photo2--compressed.jpg"); */
+        background-image: url("images/header_photo2--compressed.jpg");
 
     }
     /* explore section */
