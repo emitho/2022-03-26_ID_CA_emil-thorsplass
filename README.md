@@ -14,7 +14,6 @@ Notable features:
 - Fun hover effects on desktop.
 - Clean, dark futuristic design.
 - Dynamic hamburger menu button coded with CSS only.
-- Fun hover effects on desktop.
 - No flexbox used.
 
 
